@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@500&family=Roboto:wght@100;300;500;700&display=swap');
+
+
+::-webkit-scrollbar {
+  background-color: #403e3e;
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: orange;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: orange;
+}
+
+
+body {
+  background-color: black;
+  font-family: 'Red Hat Text', Courier, monospace;
+  color: white;
+}
+
+h2 {
+  color: orange;
+}
+
+.logoHeader {
+  width: 100px;
+}
+
+.titleText h2 {
+  font-size: 24px;
+}
+
+.titleText span {
+  color: orange;
+  font-weight: bold;
+}
+
+.titleText h2 span {
+  font-size: 36px;
+}
+
+.sectionTitle{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto;
+
+}
+
+.sectionDescubra{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background: orange;
+  color: black;
+}
+
+.description b {
+ color: orange;
+}
+
+.sectionPlanos h3 {
+  color: orange;
+}
+
+ol {
+  list-style: none; counter-reset: li
+}
+
+li::before {
+  content: counter(li); color: orange;
+  display: inline-block; width: 1em;
+  margin-left: -1em;
+  font-weight: bold;
+}
+
+li {
+  counter-increment: li
+}
