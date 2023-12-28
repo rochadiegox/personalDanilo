@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@500&family=Roboto:wght@100;300;500;700&display=swap');
 
-
 ::-webkit-scrollbar {
   background-color: #403e3e;
   width: 6px;
@@ -14,16 +13,108 @@
   background-color: orange;
 }
 
-
 body {
+  width: 100%;
+  margin: 0;
   background-color: black;
   font-family: 'Red Hat Text', Courier, monospace;
   color: white;
+
+  font-size: 14px;
+}
+
+nav {
+  display: none;
 }
 
 h2 {
   color: orange;
 }
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background-color: black;
+}
+
+.logoHeader {
+  width: 64px;
+  width: 64px;
+  object-fit: contain;
+}
+
+.logoHeader img {
+  width: 50%;
+  height: 40%;
+}
+
+
+
+.menuIcon {
+  width: 32px;
+  padding: 16px;
+}
+
+.wrapperCapa {
+  width: 100%;
+  margin-top: 64px;
+  padding-top: 24px;
+  padding-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #141414;
+}
+
+.logoCapaMobile {
+  margin-top: 72px;
+  height: 300px;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+.logoCapaDesktop {
+  display: none;
+}
+
+.textCapa {
+  max-width: 80%;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.textCapa::before {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 100%;
+  border-bottom: solid 1px white;
+  margin-bottom: 16px;
+}
+
+.button {
+  background-color: orange;
+  color: black;
+  border-radius: 50px;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: rgb(255, 193, 79);
+}
+
 
 .logoHeader {
   width: 100px;
@@ -42,17 +133,16 @@ h2 {
   font-size: 36px;
 }
 
-.sectionTitle{
+.sectionQuemSou {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
   margin: 0 auto;
-
 }
 
-.sectionDescubra{
+.sectionDescubra {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -65,7 +155,7 @@ footer {
 }
 
 .description b {
- color: orange;
+  color: orange;
 }
 
 .sectionPlanos h3 {
@@ -73,16 +163,85 @@ footer {
 }
 
 ol {
-  list-style: none; counter-reset: li
+  list-style: none;
+  counter-reset: li;
 }
 
 li::before {
-  content: counter(li); color: orange;
-  display: inline-block; width: 1em;
+  content: counter(li);
+  color: orange;
+  display: inline-block;
+  width: 1em;
   margin-left: -1em;
   font-weight: bold;
 }
 
 li {
-  counter-increment: li
+  counter-increment: li;
+}
+
+
+@media screen and (min-width: 940px) {
+
+  body {
+    font-size: 18px;
+  }
+
+  nav {
+    display: block;
+  }
+
+  nav ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 24px;
+    list-style-type: none;
+  }
+
+  li::before {
+    display: none;
+  }
+
+  .menuIcon {
+    display: none;
+  }
+
+  .logoCapaMobile {
+    display: none;
+  }
+
+  .logoCapaDesktop {
+    display: block;
+    width: 60%;
+  }
+
+  .sectionQuemSou {
+    flex-direction: row-reverse;
+    gap: 48px;
+  }
+
+
+  .sectionQuemSou img {
+    width: 300px;
+  }
+
+  .titleText {
+    width: 620px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+  }
+
+
+  nav a {
+    text-decoration: none;
+    color: white;
+  }
+
+  nav a:hover {
+    color: orange
+  }
+
 }
