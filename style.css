@@ -17,7 +17,7 @@ body {
   width: 100%;
   margin: 0;
   background-color: black;
-  font-family: 'Red Hat Text', Courier, monospace;  
+  font-family: 'Red Hat Text', Courier, monospace;
   color: white;
   font-size: 14px;
 }
@@ -145,7 +145,6 @@ header {
   align-items: center;
 
   margin: 0 auto;
-  
 }
 
 .sectionDescubra {
@@ -187,9 +186,77 @@ li {
   counter-increment: li;
 }
 
+.sectionDescubra {
+  margin: 0;
+  padding: 16px;
+  background: orange;
+}
+
+.descubraTitle {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.descubraTitle h2 {
+  color: white;
+  font-size: 28px;
+  text-align: center;
+}
+
+.avaliationAnamnese {
+  width: 280px;
+  height: 200px;
+  background-color: #141414;
+
+  margin: 8px auto;
+  padding: 16px;
+}
+
+.titleCard {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  height: 32px;
+
+  margin-bottom: 24px;
+}
+
+.titleCard p {
+  font-size: 24px;
+}
+
+.cardIcon {
+  width: 48px;
+}
+
+.plusOnline {
+  font-size: 78px;
+  color: white;
+  text-align: center;
+
+  margin: 0;
+  padding: 0;
+}
+
+.cardBonus {
+  width: 280px;
+  background-color: #141414;
+
+  margin: 8px;
+  padding: 16px;
+}
+
+.cardBonus div {
+  display: flex;
+  gap: 16px;
+}
+
+.cardBonus div img {
+  width: 48px;
+}
 
 @media screen and (min-width: 940px) {
-
   body {
     font-size: 18px;
   }
@@ -198,7 +265,7 @@ li {
     display: block;
   }
 
-  nav ul{
+  nav ul {
     display: flex;
     justify-content: space-around;
     gap: 24px;
@@ -227,7 +294,6 @@ li {
     gap: 48px;
   }
 
-
   .sectionQuemSou img {
     width: 300px;
   }
@@ -238,7 +304,6 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
   }
 
   .logoAva1 {
@@ -269,7 +334,55 @@ li {
   }
 
   nav a:hover {
-    color: orange
+    color: orange;
   }
 
+  .gridDiv {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+  }
+
+  .avaliationAnamnese p {
+    font-size: 14px;
+  }
+
+  .cardBonus {
+    display: flex;
+    width: fit-content;
+    background-color: #141414;
+    gap: 16px;
+
+    margin: 8px;
+    padding: 16px;
+  }
+
+  .cardBonus div {
+    display: flex;
+    gap: 16px;
+  }
+
+  .cardBonus div img {
+    width: 48px;
+  }
+
+
+  .descubraTitle {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .descubraTitle h2 {
+    color: white;
+    font-size: 48px;
+    text-align: center;
+  }
+
+  .descubraTitle img {
+    width: auto;
+    height: 96px;
+  }
 }
