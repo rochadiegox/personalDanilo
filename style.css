@@ -17,9 +17,8 @@ body {
   width: 100%;
   margin: 0;
   background-color: black;
-  font-family: 'Red Hat Text', Courier, monospace;
+  font-family: 'Red Hat Text', Courier, monospace;  
   color: white;
-
   font-size: 14px;
 }
 
@@ -55,8 +54,6 @@ header {
   width: 50%;
   height: 40%;
 }
-
-
 
 .menuIcon {
   width: 32px;
@@ -115,7 +112,6 @@ header {
   background-color: rgb(255, 193, 79);
 }
 
-
 .logoHeader {
   width: 100px;
 }
@@ -140,6 +136,7 @@ header {
   align-items: center;
 
   margin: 0 auto;
+  
 }
 
 .sectionDescubra {
