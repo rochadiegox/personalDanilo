@@ -145,6 +145,16 @@ header {
   align-items: center;
 
   margin: 0 auto;
+  padding: 16px;
+}
+
+.sectionQuemSou h2 {
+  font-size: 28px;
+  text-align: center;
+}
+
+.imageQuemSou {
+  width: 250px;
 }
 
 .sectionDescubra {
@@ -306,6 +316,57 @@ li {
   padding: 0;
 }
 
+.wrapperFormacao {
+  background-color: #141414;
+  margin: 0;
+  padding: 0;
+}
+
+.sectionFormacao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto;
+  padding: 64px 8px;
+}
+
+.sectionFormacao h2 {
+  font-size: 28px;
+  text-align: center;
+}
+
+.imageTreino {
+  width: 300px;
+  height: 300px;
+}
+
+.imageTreino img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.listaFormacao li {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.listaFormacao li::before {
+  display: none;
+}
+
+footer {
+  margin: 0;
+  padding: 16px;
+}
+
+.mdvTag {
+  font-size: 12px;
+  text-decoration: none;
+}
+
 @media screen and (min-width: 940px) {
   body {
     font-size: 18px;
@@ -423,6 +484,9 @@ li {
     width: 48px;
   }
 
+  .sectionQuemSou h2 {
+    font-size: 48px;
+  }
 
   .descubraTitle {
     display: flex;
@@ -430,7 +494,7 @@ li {
     align-items: center;
     justify-content: space-around;
   }
-  
+
   .descubraTitle h2 {
     color: white;
     font-size: 48px;
@@ -451,5 +515,28 @@ li {
   .plansWrapper {
     display: flex;
     flex-direction: row;
+  }
+
+  .sectionFormacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 1024px;
+
+    margin: 0 auto;
+    padding: 64px 8px;
+  }
+
+  .sectionFormacao h2 {
+    font-size: 48px;
+    text-align: center;
+  }
+
+  .descricaoFormacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
