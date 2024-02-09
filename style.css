@@ -342,7 +342,7 @@ li {
   text-align: center;
 }
 
-.descricaoFormacao{
+.descricaoFormacao {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -367,7 +367,6 @@ li {
 }
 
 .listaFormacao li {
-  
   margin-top: 8px;
   margin-bottom: 8px;
 }
@@ -592,9 +591,18 @@ footer {
     text-align: center;
   }
 
+  
+.listaFormacao {
+  width: fit-content;
+  margin: 0 auto;
+  padding-left: 16px;
+}
+
   .descricaoFormacao {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 24px;
   }
 }
