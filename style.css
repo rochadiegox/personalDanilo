@@ -256,6 +256,56 @@ li {
   width: 48px;
 }
 
+.sectionPlanos {
+  margin: 0;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  padding: 0;
+}
+
+.sectionPlanos h2 {
+  font-size: 28px;
+  text-align: center;
+}
+
+.plansWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.planoCard {
+  width: 280px;
+  height: 360px;
+  padding: 16px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  border: solid 1px orange;
+
+  font-size: 18px;
+}
+
+.planoCard h3 {
+  font-size: 36px;
+  margin-bottom: 0;
+}
+
+.pricePlan {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
 @media screen and (min-width: 940px) {
   body {
     font-size: 18px;
@@ -290,6 +340,7 @@ li {
   }
 
   .sectionQuemSou {
+    padding: 64px;
     flex-direction: row-reverse;
     gap: 48px;
   }
@@ -322,7 +373,12 @@ li {
     align-items: center;
   }
 
+  .sectionDescubra {
+    padding: 64px;
+  }
+
   .sectionPlanos {
+    padding: 64px;
     display: flex;
     text-align: left;
     justify-content: center;
@@ -384,5 +440,16 @@ li {
   .descubraTitle img {
     width: auto;
     height: 96px;
+  }
+
+  .sectionPlanos h2 {
+    color: orange;
+    font-size: 48px;
+    text-align: center;
+  }
+
+  .plansWrapper {
+    display: flex;
+    flex-direction: row;
   }
 }
