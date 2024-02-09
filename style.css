@@ -56,8 +56,6 @@ header {
   height: 40%;
 }
 
-
-
 .menuIcon {
   width: 32px;
   padding: 16px;
@@ -92,6 +90,15 @@ header {
   font-size: 16px;
   text-transform: uppercase;
   text-align: center;
+}
+
+.logoAva1 {
+  height: 150px;
+  width: 300px;
+}
+
+.fotoDan {
+  height: 200px;
 }
 
 .textCapa::before {
@@ -152,6 +159,7 @@ header {
 footer {
   background: orange;
   color: black;
+  text-align: center;
 }
 
 .description b {
@@ -234,6 +242,27 @@ li {
 
   }
 
+  .logoAva1 {
+    height: 300px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fotoDan2 {
+    height: 300px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sectionPlanos {
+    display: flex;
+    text-align: left;
+    justify-content: center;
+  }
 
   nav a {
     text-decoration: none;
